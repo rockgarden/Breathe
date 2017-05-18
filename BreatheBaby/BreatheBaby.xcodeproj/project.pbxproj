@@ -13,8 +13,38 @@
 		C2FF1AAE1ECC4091009EBBE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FF1AAD1ECC4091009EBBE7 /* Assets.xcassets */; };
 		C2FF1AB11ECC4091009EBBE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FF1AAF1ECC4091009EBBE7 /* LaunchScreen.storyboard */; };
 		C2FF1AB91ECC413D009EBBE7 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF1AB81ECC413D009EBBE7 /* SettingsVC.swift */; };
-		C2FF1ABB1ECC415D009EBBE7 /* BreathTrainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF1ABA1ECC415D009EBBE7 /* BreathTrainVC.swift */; };
+		C2FFA0781ECD63FA00F870FA /* BreatheRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FFA0761ECD63FA00F870FA /* BreatheRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2FFA0811ECD641000F870FA /* BreatheRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0801ECD641000F870FA /* BreatheRecognizer.swift */; };
+		C2FFA0831ECD690B00F870FA /* RecognizerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0821ECD690B00F870FA /* RecognizerVC.swift */; };
+		C2FFA0851ECD6D5F00F870FA /* TrainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0841ECD6D5F00F870FA /* TrainVC.swift */; };
+		C2FFA08A1ECD6FA500F870FA /* BreatheRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FFA0741ECD63FA00F870FA /* BreatheRecognizer.framework */; };
+		C2FFA08B1ECD702C00F870FA /* BreatheRecognizer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2FFA0741ECD63FA00F870FA /* BreatheRecognizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2FFA08D1ECD7A3600F870FA /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA08C1ECD7A3600F870FA /* TimerController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2FFA0881ECD6FA100F870FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2FF1A981ECC4091009EBBE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2FFA0731ECD63FA00F870FA;
+			remoteInfo = BreatheRecognizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C2FFA03F1ECD61DD00F870FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C2FFA08B1ECD702C00F870FA /* BreatheRecognizer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C2FF1AA01ECC4091009EBBE7 /* BreatheBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreatheBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,11 +55,25 @@
 		C2FF1AB01ECC4091009EBBE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2FF1AB21ECC4091009EBBE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2FF1AB81ECC413D009EBBE7 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
-		C2FF1ABA1ECC415D009EBBE7 /* BreathTrainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreathTrainVC.swift; sourceTree = "<group>"; };
+		C2FFA0741ECD63FA00F870FA /* BreatheRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BreatheRecognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2FFA0761ECD63FA00F870FA /* BreatheRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BreatheRecognizer.h; sourceTree = "<group>"; };
+		C2FFA0771ECD63FA00F870FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2FFA0801ECD641000F870FA /* BreatheRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreatheRecognizer.swift; sourceTree = "<group>"; };
+		C2FFA0821ECD690B00F870FA /* RecognizerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognizerVC.swift; sourceTree = "<group>"; };
+		C2FFA0841ECD6D5F00F870FA /* TrainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainVC.swift; sourceTree = "<group>"; };
+		C2FFA08C1ECD7A3600F870FA /* TimerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C2FF1A9D1ECC4091009EBBE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FFA08A1ECD6FA500F870FA /* BreatheRecognizer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FFA0701ECD63FA00F870FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				C2FF1AA21ECC4091009EBBE7 /* BreatheBaby */,
+				C2FFA0751ECD63FA00F870FA /* BreatheRecognizer */,
 				C2FF1AA11ECC4091009EBBE7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				C2FF1AA01ECC4091009EBBE7 /* BreatheBaby.app */,
+				C2FFA0741ECD63FA00F870FA /* BreatheRecognizer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,8 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				C2FF1AA31ECC4091009EBBE7 /* AppDelegate.swift */,
-				C2FF1ABA1ECC415D009EBBE7 /* BreathTrainVC.swift */,
+				C2FFA0821ECD690B00F870FA /* RecognizerVC.swift */,
+				C2FFA0841ECD6D5F00F870FA /* TrainVC.swift */,
 				C2FF1AB81ECC413D009EBBE7 /* SettingsVC.swift */,
+				C2FFA08C1ECD7A3600F870FA /* TimerController.swift */,
 				C2FF1AA71ECC4091009EBBE7 /* Main.storyboard */,
 				C2FF1AAD1ECC4091009EBBE7 /* Assets.xcassets */,
 				C2FF1AAF1ECC4091009EBBE7 /* LaunchScreen.storyboard */,
@@ -70,7 +118,28 @@
 			path = BreatheBaby;
 			sourceTree = "<group>";
 		};
+		C2FFA0751ECD63FA00F870FA /* BreatheRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				C2FFA0761ECD63FA00F870FA /* BreatheRecognizer.h */,
+				C2FFA0801ECD641000F870FA /* BreatheRecognizer.swift */,
+				C2FFA0771ECD63FA00F870FA /* Info.plist */,
+			);
+			path = BreatheRecognizer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C2FFA0711ECD63FA00F870FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FFA0781ECD63FA00F870FA /* BreatheRecognizer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		C2FF1A9F1ECC4091009EBBE7 /* BreatheBaby */ = {
@@ -80,15 +149,35 @@
 				C2FF1A9C1ECC4091009EBBE7 /* Sources */,
 				C2FF1A9D1ECC4091009EBBE7 /* Frameworks */,
 				C2FF1A9E1ECC4091009EBBE7 /* Resources */,
+				C2FFA03F1ECD61DD00F870FA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C2FFA0891ECD6FA100F870FA /* PBXTargetDependency */,
 			);
 			name = BreatheBaby;
 			productName = BreatheBaby;
 			productReference = C2FF1AA01ECC4091009EBBE7 /* BreatheBaby.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C2FFA0731ECD63FA00F870FA /* BreatheRecognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2FFA07F1ECD63FA00F870FA /* Build configuration list for PBXNativeTarget "BreatheRecognizer" */;
+			buildPhases = (
+				C2FFA06F1ECD63FA00F870FA /* Sources */,
+				C2FFA0701ECD63FA00F870FA /* Frameworks */,
+				C2FFA0711ECD63FA00F870FA /* Headers */,
+				C2FFA0721ECD63FA00F870FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BreatheRecognizer;
+			productName = BreatheRecognizer;
+			productReference = C2FFA0741ECD63FA00F870FA /* BreatheRecognizer.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +190,11 @@
 				ORGANIZATIONNAME = rockgarden;
 				TargetAttributes = {
 					C2FF1A9F1ECC4091009EBBE7 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = W3MH7MTTSB;
+						ProvisioningStyle = Automatic;
+					};
+					C2FFA0731ECD63FA00F870FA = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = W3MH7MTTSB;
 						ProvisioningStyle = Automatic;
@@ -121,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				C2FF1A9F1ECC4091009EBBE7 /* BreatheBaby */,
+				C2FFA0731ECD63FA00F870FA /* BreatheRecognizer */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +231,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C2FFA0721ECD63FA00F870FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -143,14 +245,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2FFA0831ECD690B00F870FA /* RecognizerVC.swift in Sources */,
 				C2FF1AA41ECC4091009EBBE7 /* AppDelegate.swift in Sources */,
+				C2FFA0851ECD6D5F00F870FA /* TrainVC.swift in Sources */,
 				C2FF1AAC1ECC4091009EBBE7 /* BreatheBaby.xcdatamodeld in Sources */,
 				C2FF1AB91ECC413D009EBBE7 /* SettingsVC.swift in Sources */,
-				C2FF1ABB1ECC415D009EBBE7 /* BreathTrainVC.swift in Sources */,
+				C2FFA08D1ECD7A3600F870FA /* TimerController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FFA06F1ECD63FA00F870FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FFA0811ECD641000F870FA /* BreatheRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2FFA0891ECD6FA100F870FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2FFA0731ECD63FA00F870FA /* BreatheRecognizer */;
+			targetProxy = C2FFA0881ECD6FA100F870FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C2FF1AA71ECC4091009EBBE7 /* Main.storyboard */ = {
@@ -268,9 +388,11 @@
 		C2FF1AB61ECC4092009EBBE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W3MH7MTTSB;
 				INFOPLIST_FILE = BreatheBaby/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockgarden.BreatheBaby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -281,13 +403,63 @@
 		C2FF1AB71ECC4092009EBBE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W3MH7MTTSB;
 				INFOPLIST_FILE = BreatheBaby/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockgarden.BreatheBaby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C2FFA07D1ECD63FA00F870FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W3MH7MTTSB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BreatheRecognizer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockgarden.BreatheRecognizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C2FFA07E1ECD63FA00F870FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W3MH7MTTSB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BreatheRecognizer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockgarden.BreatheRecognizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -310,6 +482,16 @@
 				C2FF1AB71ECC4092009EBBE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2FFA07F1ECD63FA00F870FA /* Build configuration list for PBXNativeTarget "BreatheRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FFA07D1ECD63FA00F870FA /* Debug */,
+				C2FFA07E1ECD63FA00F870FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

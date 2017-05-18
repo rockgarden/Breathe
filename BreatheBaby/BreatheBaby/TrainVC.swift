@@ -1,6 +1,6 @@
 import UIKit
 
-class BreathTrainVC: UIViewController {
+class TrainVC: UIViewController {
 	@IBOutlet weak var breathBar: UIView!
 	@IBOutlet weak var borderBar: UIView!
 	
@@ -21,16 +21,15 @@ class BreathTrainVC: UIViewController {
 																BreatheOutTimeKey: 4,
 																PauseTimeAfterBreathOutKey: 1])
 		
-		// setup the attributes of the bars that can't be adjusted from IB
+		// setup the attributes of the bars
 		borderBar.backgroundColor = UIColor.white
 		borderBar.layer.borderColor = borderBarColor
 		borderBar.layer.borderWidth = borderBarWidth
 		borderBar.layer.cornerRadius = barCornerRadius
-		
 		breathBar.layer.cornerRadius = barCornerRadius
 		
-		NotificationCenter.default.addObserver(self, selector: "appDidBecomeActive", name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
-		NotificationCenter.default.addObserver(self, selector: "appDidEnterBackground", name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
 	}
 	
 	func appDidBecomeActive() {
@@ -43,19 +42,15 @@ class BreathTrainVC: UIViewController {
 	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		
 		let breathBarWidth = borderBar.frame.size.width - 2 * breathBarPadding
-		
 		fullBreathBarFrame = CGRect(x: breathBarPadding,
 										y: breathBarPadding,
 										width: breathBarWidth,
 										height: borderBar.frame.size.height - 2 * breathBarPadding)
-		
 		emptyBreathBarFrame = CGRect(x: breathBarPadding,
 										 y: borderBar.frame.size.height - breathBarPadding,
 										 width: breathBarWidth,
 										 height: 0)
-		
 		startBreathingAnimation()
 	}
 	
