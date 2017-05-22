@@ -20,6 +20,24 @@
 		C2FFA08A1ECD6FA500F870FA /* BreatheRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FFA0741ECD63FA00F870FA /* BreatheRecognizer.framework */; };
 		C2FFA08B1ECD702C00F870FA /* BreatheRecognizer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2FFA0741ECD63FA00F870FA /* BreatheRecognizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C2FFA08D1ECD7A3600F870FA /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA08C1ECD7A3600F870FA /* TimerController.swift */; };
+		C2FFA0991ED2A84C00F870FA /* NeuralNet.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FFA0971ED2A84C00F870FA /* NeuralNet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2FFA09C1ED2A84C00F870FA /* NeuralNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FFA0951ED2A84B00F870FA /* NeuralNet.framework */; };
+		C2FFA09D1ED2A84C00F870FA /* NeuralNet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2FFA0951ED2A84B00F870FA /* NeuralNet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2FFA0A81ED2A86100F870FA /* Activation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0A11ED2A86100F870FA /* Activation.swift */; };
+		C2FFA0A91ED2A86100F870FA /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0A21ED2A86100F870FA /* Cache.swift */; };
+		C2FFA0AA1ED2A86100F870FA /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0A31ED2A86100F870FA /* Dataset.swift */; };
+		C2FFA0AB1ED2A86100F870FA /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0A41ED2A86100F870FA /* Error.swift */; };
+		C2FFA0AC1ED2A86100F870FA /* NeuralNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0A51ED2A86100F870FA /* NeuralNet.swift */; };
+		C2FFA0AD1ED2A86100F870FA /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0A61ED2A86100F870FA /* Storage.swift */; };
+		C2FFA0AE1ED2A86100F870FA /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0A71ED2A86100F870FA /* Structure.swift */; };
+		C2FFA0D71ED2A95400F870FA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0D41ED2A95400F870FA /* Colors.swift */; };
+		C2FFA0D81ED2A95400F870FA /* Float+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0D51ED2A95400F870FA /* Float+String.swift */; };
+		C2FFA0D91ED2A95400F870FA /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0D61ED2A95400F870FA /* UIView+Constraints.swift */; };
+		C2FFA0DB1ED2A9D000F870FA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0DA1ED2A9D000F870FA /* MainVC.swift */; };
+		C2FFA0DD1ED2AADE00F870FA /* AlgorithmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0DC1ED2AADE00F870FA /* AlgorithmsVC.swift */; };
+		C2FFA0DF1ED2AB8C00F870FA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0DE1ED2AB8C00F870FA /* MainView.swift */; };
+		C2FFA0E11ED2ABBC00F870FA /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA0E01ED2ABBC00F870FA /* ShadowView.swift */; };
+		C2FFA0E41ED2AC4600F870FA /* neuralnet-mnist-trained in Resources */ = {isa = PBXBuildFile; fileRef = C2FFA0E31ED2AC4600F870FA /* neuralnet-mnist-trained */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +47,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = C2FFA0731ECD63FA00F870FA;
 			remoteInfo = BreatheRecognizer;
+		};
+		C2FFA09A1ED2A84C00F870FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2FF1A981ECC4091009EBBE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2FFA0941ED2A84B00F870FA;
+			remoteInfo = NeuralNet;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +65,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C2FFA08B1ECD702C00F870FA /* BreatheRecognizer.framework in Embed Frameworks */,
+				C2FFA09D1ED2A84C00F870FA /* NeuralNet.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +88,24 @@
 		C2FFA0821ECD690B00F870FA /* RecognizerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognizerVC.swift; sourceTree = "<group>"; };
 		C2FFA0841ECD6D5F00F870FA /* TrainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainVC.swift; sourceTree = "<group>"; };
 		C2FFA08C1ECD7A3600F870FA /* TimerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+		C2FFA0951ED2A84B00F870FA /* NeuralNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NeuralNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2FFA0971ED2A84C00F870FA /* NeuralNet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NeuralNet.h; sourceTree = "<group>"; };
+		C2FFA0981ED2A84C00F870FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2FFA0A11ED2A86100F870FA /* Activation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activation.swift; sourceTree = "<group>"; };
+		C2FFA0A21ED2A86100F870FA /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		C2FFA0A31ED2A86100F870FA /* Dataset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
+		C2FFA0A41ED2A86100F870FA /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		C2FFA0A51ED2A86100F870FA /* NeuralNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuralNet.swift; sourceTree = "<group>"; };
+		C2FFA0A61ED2A86100F870FA /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		C2FFA0A71ED2A86100F870FA /* Structure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structure.swift; sourceTree = "<group>"; };
+		C2FFA0D41ED2A95400F870FA /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		C2FFA0D51ED2A95400F870FA /* Float+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+String.swift"; sourceTree = "<group>"; };
+		C2FFA0D61ED2A95400F870FA /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		C2FFA0DA1ED2A9D000F870FA /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		C2FFA0DC1ED2AADE00F870FA /* AlgorithmsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmsVC.swift; sourceTree = "<group>"; };
+		C2FFA0DE1ED2AB8C00F870FA /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C2FFA0E01ED2ABBC00F870FA /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		C2FFA0E31ED2AC4600F870FA /* neuralnet-mnist-trained */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "neuralnet-mnist-trained"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +114,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2FFA08A1ECD6FA500F870FA /* BreatheRecognizer.framework in Frameworks */,
+				C2FFA09C1ED2A84C00F870FA /* NeuralNet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C2FFA0701ECD63FA00F870FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FFA0911ED2A84B00F870FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -88,6 +140,7 @@
 			children = (
 				C2FF1AA21ECC4091009EBBE7 /* BreatheBaby */,
 				C2FFA0751ECD63FA00F870FA /* BreatheRecognizer */,
+				C2FFA0961ED2A84C00F870FA /* NeuralNet */,
 				C2FF1AA11ECC4091009EBBE7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +150,7 @@
 			children = (
 				C2FF1AA01ECC4091009EBBE7 /* BreatheBaby.app */,
 				C2FFA0741ECD63FA00F870FA /* BreatheRecognizer.framework */,
+				C2FFA0951ED2A84B00F870FA /* NeuralNet.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,15 +159,21 @@
 			isa = PBXGroup;
 			children = (
 				C2FF1AA31ECC4091009EBBE7 /* AppDelegate.swift */,
+				C2FF1AA71ECC4091009EBBE7 /* Main.storyboard */,
+				C2FFA0DA1ED2A9D000F870FA /* MainVC.swift */,
 				C2FFA0821ECD690B00F870FA /* RecognizerVC.swift */,
 				C2FFA0841ECD6D5F00F870FA /* TrainVC.swift */,
 				C2FF1AB81ECC413D009EBBE7 /* SettingsVC.swift */,
 				C2FFA08C1ECD7A3600F870FA /* TimerController.swift */,
-				C2FF1AA71ECC4091009EBBE7 /* Main.storyboard */,
+				C2FFA0DC1ED2AADE00F870FA /* AlgorithmsVC.swift */,
+				C2FFA0DE1ED2AB8C00F870FA /* MainView.swift */,
+				C2FFA0E01ED2ABBC00F870FA /* ShadowView.swift */,
 				C2FF1AAD1ECC4091009EBBE7 /* Assets.xcassets */,
 				C2FF1AAF1ECC4091009EBBE7 /* LaunchScreen.storyboard */,
 				C2FF1AB21ECC4091009EBBE7 /* Info.plist */,
 				C2FF1AAA1ECC4091009EBBE7 /* BreatheBaby.xcdatamodeld */,
+				C2FFA0E21ED2AC4600F870FA /* Resource */,
+				C2FFA0D31ED2A95400F870FA /* Extensions */,
 			);
 			path = BreatheBaby;
 			sourceTree = "<group>";
@@ -128,6 +188,40 @@
 			path = BreatheRecognizer;
 			sourceTree = "<group>";
 		};
+		C2FFA0961ED2A84C00F870FA /* NeuralNet */ = {
+			isa = PBXGroup;
+			children = (
+				C2FFA0971ED2A84C00F870FA /* NeuralNet.h */,
+				C2FFA0981ED2A84C00F870FA /* Info.plist */,
+				C2FFA0A11ED2A86100F870FA /* Activation.swift */,
+				C2FFA0A21ED2A86100F870FA /* Cache.swift */,
+				C2FFA0A31ED2A86100F870FA /* Dataset.swift */,
+				C2FFA0A41ED2A86100F870FA /* Error.swift */,
+				C2FFA0A51ED2A86100F870FA /* NeuralNet.swift */,
+				C2FFA0A61ED2A86100F870FA /* Storage.swift */,
+				C2FFA0A71ED2A86100F870FA /* Structure.swift */,
+			);
+			path = NeuralNet;
+			sourceTree = "<group>";
+		};
+		C2FFA0D31ED2A95400F870FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C2FFA0D41ED2A95400F870FA /* Colors.swift */,
+				C2FFA0D51ED2A95400F870FA /* Float+String.swift */,
+				C2FFA0D61ED2A95400F870FA /* UIView+Constraints.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C2FFA0E21ED2AC4600F870FA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C2FFA0E31ED2AC4600F870FA /* neuralnet-mnist-trained */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -136,6 +230,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2FFA0781ECD63FA00F870FA /* BreatheRecognizer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FFA0921ED2A84B00F870FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FFA0991ED2A84C00F870FA /* NeuralNet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +257,7 @@
 			);
 			dependencies = (
 				C2FFA0891ECD6FA100F870FA /* PBXTargetDependency */,
+				C2FFA09B1ED2A84C00F870FA /* PBXTargetDependency */,
 			);
 			name = BreatheBaby;
 			productName = BreatheBaby;
@@ -179,6 +282,24 @@
 			productReference = C2FFA0741ECD63FA00F870FA /* BreatheRecognizer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C2FFA0941ED2A84B00F870FA /* NeuralNet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2FFA0A01ED2A84C00F870FA /* Build configuration list for PBXNativeTarget "NeuralNet" */;
+			buildPhases = (
+				C2FFA0901ED2A84B00F870FA /* Sources */,
+				C2FFA0911ED2A84B00F870FA /* Frameworks */,
+				C2FFA0921ED2A84B00F870FA /* Headers */,
+				C2FFA0931ED2A84B00F870FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeuralNet;
+			productName = NeuralNet;
+			productReference = C2FFA0951ED2A84B00F870FA /* NeuralNet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,6 +320,12 @@
 						DevelopmentTeam = W3MH7MTTSB;
 						ProvisioningStyle = Automatic;
 					};
+					C2FFA0941ED2A84B00F870FA = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = W3MH7MTTSB;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = C2FF1A9B1ECC4091009EBBE7 /* Build configuration list for PBXProject "BreatheBaby" */;
@@ -216,6 +343,7 @@
 			targets = (
 				C2FF1A9F1ECC4091009EBBE7 /* BreatheBaby */,
 				C2FFA0731ECD63FA00F870FA /* BreatheRecognizer */,
+				C2FFA0941ED2A84B00F870FA /* NeuralNet */,
 			);
 		};
 /* End PBXProject section */
@@ -226,12 +354,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2FF1AB11ECC4091009EBBE7 /* LaunchScreen.storyboard in Resources */,
+				C2FFA0E41ED2AC4600F870FA /* neuralnet-mnist-trained in Resources */,
 				C2FF1AAE1ECC4091009EBBE7 /* Assets.xcassets in Resources */,
 				C2FF1AA91ECC4091009EBBE7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C2FFA0721ECD63FA00F870FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FFA0931ED2A84B00F870FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,9 +382,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2FFA0831ECD690B00F870FA /* RecognizerVC.swift in Sources */,
+				C2FFA0DF1ED2AB8C00F870FA /* MainView.swift in Sources */,
+				C2FFA0DD1ED2AADE00F870FA /* AlgorithmsVC.swift in Sources */,
+				C2FFA0DB1ED2A9D000F870FA /* MainVC.swift in Sources */,
 				C2FF1AA41ECC4091009EBBE7 /* AppDelegate.swift in Sources */,
 				C2FFA0851ECD6D5F00F870FA /* TrainVC.swift in Sources */,
+				C2FFA0D91ED2A95400F870FA /* UIView+Constraints.swift in Sources */,
+				C2FFA0D71ED2A95400F870FA /* Colors.swift in Sources */,
 				C2FF1AAC1ECC4091009EBBE7 /* BreatheBaby.xcdatamodeld in Sources */,
+				C2FFA0D81ED2A95400F870FA /* Float+String.swift in Sources */,
+				C2FFA0E11ED2ABBC00F870FA /* ShadowView.swift in Sources */,
 				C2FF1AB91ECC413D009EBBE7 /* SettingsVC.swift in Sources */,
 				C2FFA08D1ECD7A3600F870FA /* TimerController.swift in Sources */,
 			);
@@ -262,6 +405,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C2FFA0901ED2A84B00F870FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FFA0AB1ED2A86100F870FA /* Error.swift in Sources */,
+				C2FFA0AC1ED2A86100F870FA /* NeuralNet.swift in Sources */,
+				C2FFA0AA1ED2A86100F870FA /* Dataset.swift in Sources */,
+				C2FFA0A91ED2A86100F870FA /* Cache.swift in Sources */,
+				C2FFA0A81ED2A86100F870FA /* Activation.swift in Sources */,
+				C2FFA0AE1ED2A86100F870FA /* Structure.swift in Sources */,
+				C2FFA0AD1ED2A86100F870FA /* Storage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -269,6 +426,11 @@
 			isa = PBXTargetDependency;
 			target = C2FFA0731ECD63FA00F870FA /* BreatheRecognizer */;
 			targetProxy = C2FFA0881ECD6FA100F870FA /* PBXContainerItemProxy */;
+		};
+		C2FFA09B1ED2A84C00F870FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2FFA0941ED2A84B00F870FA /* NeuralNet */;
+			targetProxy = C2FFA09A1ED2A84C00F870FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -463,6 +625,57 @@
 			};
 			name = Release;
 		};
+		C2FFA09E1ED2A84C00F870FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W3MH7MTTSB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NeuralNet/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockgarden.NeuralNet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C2FFA09F1ED2A84C00F870FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W3MH7MTTSB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NeuralNet/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockgarden.NeuralNet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -492,6 +705,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C2FFA0A01ED2A84C00F870FA /* Build configuration list for PBXNativeTarget "NeuralNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FFA09E1ED2A84C00F870FA /* Debug */,
+				C2FFA09F1ED2A84C00F870FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
