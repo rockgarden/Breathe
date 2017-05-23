@@ -29,7 +29,6 @@ class MainView: UIView {
     let outputLabel = UILabel()
     let confidenceLabel = UILabel()
     
-    
     convenience init() {
         self.init(frame: .zero)
         configureSubviews()

@@ -1,3 +1,11 @@
+//
+//  TrainVC.swift
+//  BreatheBaby
+//
+//  Created by wangkan on 2017/5/22.
+//  Copyright © 2017年 rockgarden. All rights reserved.
+//
+
 import UIKit
 
 class TrainVC: UIViewController {
@@ -20,7 +28,7 @@ class TrainVC: UIViewController {
 																PauseTimeAfterBreathInKey:1,
 																BreatheOutTimeKey: 4,
 																PauseTimeAfterBreathOutKey: 1])
-		
+
 		// setup the attributes of the bars
 		borderBar.backgroundColor = UIColor.white
 		borderBar.layer.borderColor = borderBarColor

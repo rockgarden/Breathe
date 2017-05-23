@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C21423921ED4190800843919 /* BreatheData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21423911ED4190800843919 /* BreatheData.swift */; };
+		C21423941ED4269A00843919 /* RecordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21423931ED4269A00843919 /* RecordsVC.swift */; };
 		C2FF1AA41ECC4091009EBBE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF1AA31ECC4091009EBBE7 /* AppDelegate.swift */; };
 		C2FF1AA91ECC4091009EBBE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FF1AA71ECC4091009EBBE7 /* Main.storyboard */; };
 		C2FF1AAC1ECC4091009EBBE7 /* BreatheBaby.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2FF1AAA1ECC4091009EBBE7 /* BreatheBaby.xcdatamodeld */; };
@@ -73,6 +75,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C21423911ED4190800843919 /* BreatheData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreatheData.swift; sourceTree = "<group>"; };
+		C21423931ED4269A00843919 /* RecordsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsVC.swift; sourceTree = "<group>"; };
 		C2FF1AA01ECC4091009EBBE7 /* BreatheBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreatheBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FF1AA31ECC4091009EBBE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2FF1AA81ECC4091009EBBE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 				C2FF1AA71ECC4091009EBBE7 /* Main.storyboard */,
 				C2FFA0DA1ED2A9D000F870FA /* MainVC.swift */,
 				C2FFA0821ECD690B00F870FA /* RecognizerVC.swift */,
+				C21423931ED4269A00843919 /* RecordsVC.swift */,
 				C2FFA0841ECD6D5F00F870FA /* TrainVC.swift */,
 				C2FF1AB81ECC413D009EBBE7 /* SettingsVC.swift */,
 				C2FFA08C1ECD7A3600F870FA /* TimerController.swift */,
@@ -182,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				C2FFA0761ECD63FA00F870FA /* BreatheRecognizer.h */,
+				C21423911ED4190800843919 /* BreatheData.swift */,
 				C2FFA0801ECD641000F870FA /* BreatheRecognizer.swift */,
 				C2FFA0771ECD63FA00F870FA /* Info.plist */,
 			);
@@ -391,6 +397,7 @@
 				C2FFA0D71ED2A95400F870FA /* Colors.swift in Sources */,
 				C2FF1AAC1ECC4091009EBBE7 /* BreatheBaby.xcdatamodeld in Sources */,
 				C2FFA0D81ED2A95400F870FA /* Float+String.swift in Sources */,
+				C21423941ED4269A00843919 /* RecordsVC.swift in Sources */,
 				C2FFA0E11ED2ABBC00F870FA /* ShadowView.swift in Sources */,
 				C2FF1AB91ECC413D009EBBE7 /* SettingsVC.swift in Sources */,
 				C2FFA08D1ECD7A3600F870FA /* TimerController.swift in Sources */,
@@ -402,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2FFA0811ECD641000F870FA /* BreatheRecognizer.swift in Sources */,
+				C21423921ED4190800843919 /* BreatheData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,6 +721,7 @@
 				C2FFA09F1ED2A84C00F870FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

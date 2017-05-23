@@ -73,4 +73,5 @@ open class BreatheRecognizer: NSObject {
             isBreathing = (combinedPower > threshold)
         }
     }
+
 }
