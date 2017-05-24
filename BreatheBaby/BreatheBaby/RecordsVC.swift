@@ -13,7 +13,7 @@ class RecordsVC: UITableViewController {
 
     @IBOutlet var journalTableView: UITableView!
     
-    var journalData: [BreatheData] = []
+    var data: [BreatheData] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,15 +33,15 @@ class RecordsVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.journalData.count
+        return self.data.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-        cell.textLabel?.text = String(format: "%.2f breaths per minute", 60/self.journalData[indexPath.row].interval)
-        cell.detailTextLabel?.text = "Date: \(self.journalData[indexPath.row].date!)"
+        cell.textLabel?.text = String(format: "%.2f breaths per minute", 60/self.data[indexPath.row].interval)
+        cell.detailTextLabel?.text = "Date: \(self.data[indexPath.row].date!)"
 
         return cell
     }

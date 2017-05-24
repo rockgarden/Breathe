@@ -16,6 +16,7 @@ open class BreatheRecognizer: NSObject {
     /// Threshold in decibels (-160 < threshold < 0)
     let threshold: Float
     var recorder: AVAudioRecorder? = nil
+    var timer: Timer!
 
     var isBreathing = false {
         willSet(newBreathing) {
@@ -52,7 +53,7 @@ open class BreatheRecognizer: NSObject {
         recorder?.isMeteringEnabled = true
         recorder?.record()
 
-        Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(tick), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(tick), userInfo: nil, repeats: true)
     }
     
     private func getDocumentsDirectory() -> URL {
@@ -71,6 +72,13 @@ open class BreatheRecognizer: NSObject {
             let combinedPower = average + peak
 
             isBreathing = (combinedPower > threshold)
+        }
+    }
+    
+    // FIXME: release timer
+    deinit {
+        if timer != nil {
+            timer!.invalidate()
         }
     }
 

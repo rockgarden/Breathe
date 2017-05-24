@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,15 +20,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breathe moniter for you angel!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGc-Zb-gn3">
-                                <rect key="frame" x="52" y="309" width="270" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Copyright © 2017年 rockgarden. All rights reserved." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDU-Il-CG3">
+                                <rect key="frame" x="10" y="644" width="355" height="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Breathe moniter for you angel!" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S7K-fB-PJq">
+                                <rect key="frame" x="74.5" y="318.5" width="226" height="30"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are the baby's first doctor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yd-yp-HgH">
+                                <rect key="frame" x="9.5" y="264.5" width="355" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kDU-Il-CG3" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" constant="-20" id="3uH-Ek-EwD"/>
+                            <constraint firstItem="9Yd-yp-HgH" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" constant="-20" id="AuD-eI-MRp"/>
+                            <constraint firstItem="S7K-fB-PJq" firstAttribute="width" relation="lessThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="width" constant="-40" id="I3j-6h-BWZ"/>
+                            <constraint firstItem="kDU-Il-CG3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Sqv-XV-D0a"/>
+                            <constraint firstItem="S7K-fB-PJq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Vio-De-KGk"/>
+                            <constraint firstItem="S7K-fB-PJq" firstAttribute="top" secondItem="9Yd-yp-HgH" secondAttribute="bottom" constant="30" id="XRG-8b-Izi"/>
+                            <constraint firstItem="9Yd-yp-HgH" firstAttribute="centerX" secondItem="S7K-fB-PJq" secondAttribute="centerX" id="eSZ-rb-wSf"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="kDU-Il-CG3" secondAttribute="bottom" constant="8" symbolic="YES" id="pJe-cD-uzE"/>
+                            <constraint firstItem="S7K-fB-PJq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uyl-fG-Tok"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

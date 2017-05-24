@@ -9,8 +9,8 @@
 import Foundation
 
 open class BreatheData {
-    var date: Date!
-    var interval : Double!
+    open var date: Date!
+    open var interval : Double!
     
     public init(date: Date, interval: Double) {
         self.date = date

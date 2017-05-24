@@ -11,7 +11,7 @@ import BreatheRecognizer
 
 class RecognizerVC: UIViewController {
     
-    var breatheRecognizer: BreatheRecognizer! = nil
+    weak var breatheRecognizer: BreatheRecognizer! = nil
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var breathImage: UIView!
     @IBOutlet weak var notifyButton: UIButton!
@@ -20,24 +20,25 @@ class RecognizerVC: UIViewController {
     
     var checkTimer: Timer!
     var timeAtPress: Date!
-    var isDataCollected: Bool = true
-    var dataCollected: Int = 0
+    var isDataCollected = true
+    var dataCollected = 0
     var intervalData: Double!
-    lazy var journalData = [BreatheData]()
+    lazy var breatheData = [BreatheData]()
     
     var phone = "4692659694"
     
     override func viewDidLoad() {
         do {
-            try breatheRecognizer = BreatheRecognizer(threshold: -15) { [unowned self] isBreathing in
+            // TODO: Swift中的weak、unowned对应Objective-C中的weak、unsafe_unretained，这表明前者在对象释放后 会自动将对象置为nil，而后者依然保持一个“无效的”引用，如果此时调用这个“无效的”引用将会引起程序崩溃。 https://www.douban.com/note/537218897/?type=like
+            try breatheRecognizer = BreatheRecognizer(threshold: -15) { [weak self] isBreathing in
                 if isBreathing {
-                    self.bottomConstraint.constant = 300
-                    if self.timeAtPress != nil {
-                        self.endTimer()
+                    self?.bottomConstraint.constant = 300
+                    if self?.timeAtPress != nil {
+                        self?.endTimer()
                     }
-                    self.startTimer()
+                    self?.startTimer()
                 } else {
-                    self.bottomConstraint.constant = 50
+                    self?.bottomConstraint.constant = 50
                 }
             }
         } catch {
@@ -97,7 +98,7 @@ class RecognizerVC: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? RecordsVC {
-            vc.journalData = self.journalData
+            vc.data = self.breatheData
         }
     }
     
@@ -121,7 +122,7 @@ class RecognizerVC: UIViewController {
         } else if dataCollected == 5 {
             navigationItem.title = "Data Recorded..."
             intervalData = (intervalData + Date().timeIntervalSince(timeAtPress))/2
-            self.journalData.insert(BreatheData(date: Date(), interval: intervalData), at: 0)
+            self.breatheData.insert(BreatheData(date: Date(), interval: intervalData), at: 0)
             animate(time: intervalData)
         } else {
             navigationItem.title = "Everything will be okay..."
@@ -152,6 +153,10 @@ class RecognizerVC: UIViewController {
         if intervalData < 4.0 {
             intervalData = intervalData + 0.005
         }
+    }
+    
+    deinit {
+        breatheRecognizer = nil
     }
 }
 
