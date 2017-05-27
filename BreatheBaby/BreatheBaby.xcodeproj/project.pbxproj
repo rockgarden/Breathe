@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		C21423921ED4190800843919 /* BreatheData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21423911ED4190800843919 /* BreatheData.swift */; };
 		C21423941ED4269A00843919 /* RecordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21423931ED4269A00843919 /* RecordsVC.swift */; };
+		C2A8816C1ED7FF99000221F5 /* AppGlobalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8816B1ED7FF98000221F5 /* AppGlobalObject.swift */; };
+		C2A8816E1ED7FFDA000221F5 /* AppGlobalFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8816D1ED7FFDA000221F5 /* AppGlobalFunc.swift */; };
+		C2A8817A1ED95CBD000221F5 /* SoundCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A881741ED95CBD000221F5 /* SoundCollectionVC.swift */; };
+		C2A8817B1ED95CBD000221F5 /* SoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A881751ED95CBD000221F5 /* SoundVC.swift */; };
+		C2A8817C1ED95CBD000221F5 /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A881761ED95CBD000221F5 /* WaveformView.swift */; };
+		C2A8817D1ED95CBD000221F5 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A881771ED95CBD000221F5 /* Sound.swift */; };
+		C2A8817E1ED95CBD000221F5 /* Ear.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A881781ED95CBD000221F5 /* Ear.swift */; };
+		C2A881811ED95D30000221F5 /* DigitalEarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A881801ED95D30000221F5 /* DigitalEarVC.swift */; };
+		C2A881831ED95E34000221F5 /* Ext_SKProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A881821ED95E34000221F5 /* Ext_SKProduct.swift */; };
 		C2FF1AA41ECC4091009EBBE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF1AA31ECC4091009EBBE7 /* AppDelegate.swift */; };
 		C2FF1AA91ECC4091009EBBE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FF1AA71ECC4091009EBBE7 /* Main.storyboard */; };
 		C2FF1AAC1ECC4091009EBBE7 /* BreatheBaby.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2FF1AAA1ECC4091009EBBE7 /* BreatheBaby.xcdatamodeld */; };
@@ -77,6 +86,15 @@
 /* Begin PBXFileReference section */
 		C21423911ED4190800843919 /* BreatheData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreatheData.swift; sourceTree = "<group>"; };
 		C21423931ED4269A00843919 /* RecordsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsVC.swift; sourceTree = "<group>"; };
+		C2A8816B1ED7FF98000221F5 /* AppGlobalObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGlobalObject.swift; sourceTree = "<group>"; };
+		C2A8816D1ED7FFDA000221F5 /* AppGlobalFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGlobalFunc.swift; sourceTree = "<group>"; };
+		C2A881741ED95CBD000221F5 /* SoundCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundCollectionVC.swift; sourceTree = "<group>"; };
+		C2A881751ED95CBD000221F5 /* SoundVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundVC.swift; sourceTree = "<group>"; };
+		C2A881761ED95CBD000221F5 /* WaveformView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
+		C2A881771ED95CBD000221F5 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		C2A881781ED95CBD000221F5 /* Ear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ear.swift; sourceTree = "<group>"; };
+		C2A881801ED95D30000221F5 /* DigitalEarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitalEarVC.swift; sourceTree = "<group>"; };
+		C2A881821ED95E34000221F5 /* Ext_SKProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ext_SKProduct.swift; sourceTree = "<group>"; };
 		C2FF1AA01ECC4091009EBBE7 /* BreatheBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreatheBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FF1AA31ECC4091009EBBE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2FF1AA81ECC4091009EBBE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -163,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				C2FF1AA31ECC4091009EBBE7 /* AppDelegate.swift */,
+				C2A8816B1ED7FF98000221F5 /* AppGlobalObject.swift */,
+				C2A8816D1ED7FFDA000221F5 /* AppGlobalFunc.swift */,
 				C2FF1AA71ECC4091009EBBE7 /* Main.storyboard */,
 				C2FFA0DA1ED2A9D000F870FA /* MainVC.swift */,
 				C2FFA0821ECD690B00F870FA /* RecognizerVC.swift */,
@@ -173,6 +193,12 @@
 				C2FFA0DC1ED2AADE00F870FA /* AlgorithmsVC.swift */,
 				C2FFA0DE1ED2AB8C00F870FA /* MainView.swift */,
 				C2FFA0E01ED2ABBC00F870FA /* ShadowView.swift */,
+				C2A881801ED95D30000221F5 /* DigitalEarVC.swift */,
+				C2A881741ED95CBD000221F5 /* SoundCollectionVC.swift */,
+				C2A881751ED95CBD000221F5 /* SoundVC.swift */,
+				C2A881761ED95CBD000221F5 /* WaveformView.swift */,
+				C2A881771ED95CBD000221F5 /* Sound.swift */,
+				C2A881781ED95CBD000221F5 /* Ear.swift */,
 				C2FF1AAD1ECC4091009EBBE7 /* Assets.xcassets */,
 				C2FF1AAF1ECC4091009EBBE7 /* LaunchScreen.storyboard */,
 				C2FF1AB21ECC4091009EBBE7 /* Info.plist */,
@@ -216,6 +242,7 @@
 				C2FFA0D41ED2A95400F870FA /* Colors.swift */,
 				C2FFA0D51ED2A95400F870FA /* Float+String.swift */,
 				C2FFA0D61ED2A95400F870FA /* UIView+Constraints.swift */,
+				C2A881821ED95E34000221F5 /* Ext_SKProduct.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,19 +414,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A8817A1ED95CBD000221F5 /* SoundCollectionVC.swift in Sources */,
 				C2FFA0831ECD690B00F870FA /* RecognizerVC.swift in Sources */,
 				C2FFA0DF1ED2AB8C00F870FA /* MainView.swift in Sources */,
 				C2FFA0DD1ED2AADE00F870FA /* AlgorithmsVC.swift in Sources */,
+				C2A8816C1ED7FF99000221F5 /* AppGlobalObject.swift in Sources */,
 				C2FFA0DB1ED2A9D000F870FA /* MainVC.swift in Sources */,
 				C2FF1AA41ECC4091009EBBE7 /* AppDelegate.swift in Sources */,
+				C2A881811ED95D30000221F5 /* DigitalEarVC.swift in Sources */,
 				C2FFA0851ECD6D5F00F870FA /* TrainVC.swift in Sources */,
 				C2FFA0D91ED2A95400F870FA /* UIView+Constraints.swift in Sources */,
 				C2FFA0D71ED2A95400F870FA /* Colors.swift in Sources */,
 				C2FF1AAC1ECC4091009EBBE7 /* BreatheBaby.xcdatamodeld in Sources */,
+				C2A881831ED95E34000221F5 /* Ext_SKProduct.swift in Sources */,
 				C2FFA0D81ED2A95400F870FA /* Float+String.swift in Sources */,
 				C21423941ED4269A00843919 /* RecordsVC.swift in Sources */,
+				C2A8816E1ED7FFDA000221F5 /* AppGlobalFunc.swift in Sources */,
 				C2FFA0E11ED2ABBC00F870FA /* ShadowView.swift in Sources */,
+				C2A8817D1ED95CBD000221F5 /* Sound.swift in Sources */,
+				C2A8817C1ED95CBD000221F5 /* WaveformView.swift in Sources */,
 				C2FF1AB91ECC413D009EBBE7 /* SettingsVC.swift in Sources */,
+				C2A8817E1ED95CBD000221F5 /* Ear.swift in Sources */,
+				C2A8817B1ED95CBD000221F5 /* SoundVC.swift in Sources */,
 				C2FFA08D1ECD7A3600F870FA /* TimerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
